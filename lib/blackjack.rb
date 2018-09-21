@@ -46,7 +46,7 @@ if input ==  "h"
   deal_card + current_card_total
 elsif input == "s"
   current_card_total
-elseif (input !== "h") && (input !== "s")
+elsif (input !== "h") && (input !== "s")
     invalid_command
     hit?(current_card_total)
 end
