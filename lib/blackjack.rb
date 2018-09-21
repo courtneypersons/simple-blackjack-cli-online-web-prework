@@ -46,11 +46,15 @@ if input ==  "h"
   deal_card + current_card_total
 elsif input == "s"
   current_card_total
+elseif (input !== "h") && (input !== "s")
+    invalid_command
+    hit?(current_card_total)
 end
 end
 
 def invalid_command
   # code invalid_command here
+  puts "Please enter a valid command"
 end
 
 #####################################################
